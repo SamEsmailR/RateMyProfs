@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: RateMyProfs_development
+  url: <%= ENV['DATABASE_URL'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -71,7 +71,7 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-#   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
+DATABASE_URL: "postgres://eqmrzuiy:e67caOl5cGuBSfYN9S7l3We-jAzn87lF@tiny.db.elephantsql.com/eqmrzuiy"
 #
 # You can use this database configuration with:
 #
@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: RateMyProfs_production
-  username: RateMyProfs
-  password: <%= ENV['RATEMYPROFS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
