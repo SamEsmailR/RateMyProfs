@@ -37,3 +37,4 @@ bundle.js.map
 npm-debug.log
 Gemfile.lock
 package-lock.json
+/config/master.key
