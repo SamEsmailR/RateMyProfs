@@ -82,3 +82,7 @@ production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
 
+environment:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+
