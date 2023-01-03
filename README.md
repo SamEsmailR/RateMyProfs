@@ -1,3 +1,5 @@
+Gemfile.lock
+
 # Rate My PRofs
 
 [Live Link](https://rate-my-profs.herokuapp.com/#/)
