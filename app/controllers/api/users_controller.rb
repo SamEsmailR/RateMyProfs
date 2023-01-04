@@ -89,7 +89,7 @@ class Api::UsersController < ApplicationController
         else
             render json: ['Invalid password'], status: 401
         end
-    else
+    
         
     end
 
